@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <EditText
+        android:id="@+id/email_account"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:hint="E-mail"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password_account"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_account" />
+
+    <Button
+        android:id="@+id/login_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/password_account"
+        app:layout_constraintTop_toBottomOf="@+id/password_account" />
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/login_account"
+        app:layout_constraintStart_toStartOf="@+id/password_account"
+        app:layout_constraintTop_toBottomOf="@+id/password_account" />
+</androidx.constraintlayout.widget.ConstraintLayout>
